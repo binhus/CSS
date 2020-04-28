@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.ex2 {
+    opacity: 0%;
+    animation-name: disapear;
+    animation-duration: 3s;
+}
+
+.ex3 {
+    animation-name: apear;
+    animation-duration: 3s;
+}
+
+.ex5 {
+    animation-name: slide;
+    animation-duration: 5s;
+    word-wrap: ;
+}
+
+.ex6 {
+    animation-name: grow;
+    animation-duration: 3s;
+    opacity: 0%;
+}
+
+.ex7 {
+    animation-name: growfade;
+    animation-duration: 3s;
+    opacity: 0%;
+}
+
+.ex8 {
+    animation-name: growfade;
+    animation-duration: 3s;
+    opacity: 0%;
+    color: red;
+}
+
+.ex9 {
+    animation-name: growfadecolored;
+    animation-duration: 3s;
+    opacity: 0%;
+    color: red;
+}
+
+@keyframes disapear {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes apear {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes slide {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 80%;
+    }
+}
+
+@keyframes grow {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+        font-size: 3em;
+    }
+}
+
+@keyframes growfade {
+    0% {
+        opacity: 0%;
+        font-size: 1em;
+    }
+    60% {
+        opacity: 100%;
+        font-size: 3em;
+        }
+    100% {
+        opacity: 0%;
+        font-size: 1em;
+    }
+    
+}
+
+@keyframes growfadecolored {
+    0% {
+        opacity: 0%;
+        font-size: 1em;
+        color: blue;
+    }
+    60% {
+        opacity: 100%;
+        font-size: 3em;
+        }
+    100% {
+        opacity: 0%;
+        font-size: 1em;
+        color: red;
+    }
+    
+}
